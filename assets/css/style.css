@@ -1,7 +1,7 @@
 .box {
     display: inline-block;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 20px;
     background-color: #c5d4e6;
     color: #666;
@@ -15,7 +15,6 @@
 /* Start Products */
 
 .products .box {
-    clear: both;
     width: 100%;
 }
 
@@ -227,7 +226,6 @@
     border-radius: 5px;
     background-color: #1764c9;
     display: none;
-    overflow-y: scroll;
 }
 
 .modal.show {
@@ -246,15 +244,22 @@
 }
 .modal .modal__card_head {
     background-color: #003d8d;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 .modal .modal__card_head h3 {
     color: #F2F2F2;
 }
 
 .popup {
+    color: #F2F2F2;
     text-align: center;
+}
+
+.modal .box {
+    padding: 5px 0 5px 0;
+    background-color: #003d8d;
+    color: #F2F2F2;
 }
 
 .modal .box_block .box {
@@ -269,6 +274,7 @@
 
 .modal__container .box {
     width: 49%;
+    padding-bottom: 0;
 }
 .box_text {
     text-align: left;
