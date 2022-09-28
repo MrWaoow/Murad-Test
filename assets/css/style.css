@@ -1,6 +1,24 @@
-/*-----------------------------------------------------------------*/
-/* Tab
-/*-----------------------------------------------------------------*/
+.box {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #c5d4e6;
+    color: #666;
+    width: 33%;
+}
+
+.box h3 {
+    color: #444;
+}
+
+/* Start Products */
+
+.products .box {
+    clear: both;
+    width: 100%;
+}
+
 .nav {
     display: block;
 }
@@ -106,7 +124,6 @@
 }
 
 .content-tab-1 .card .imgBx {
-    z-index: 1000;
     width: 100%;
     transition: .5s;
 }
@@ -128,7 +145,6 @@
     height: 100px;
     text-align: center;
     transition: 1s;
-    z-index: 90;
     height: 210px;
 }
 
@@ -181,4 +197,92 @@
     transform: translateY(0px);
     transition-delay: .7s;
     transition: .5s;
+    cursor: pointer;
+}
+
+/* Start Pop up */
+
+.main__title {
+    font-size: 4rem
+}
+
+.main__paragraph {
+    font-size: 1.8rem
+}
+
+.modal__img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+.modal {
+    max-width: 700px;
+    max-height: 650px;
+    width: 85%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #1764c9;
+    display: none;
+    overflow-y: scroll;
+}
+
+.modal.show {
+    display: block
+}
+
+#close {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    right: 0;
+    padding: 1rem;
+    margin-right: 10px;
+}
+.modal .modal__card_head {
+    background-color: #003d8d;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.modal .modal__card_head h3 {
+    color: #F2F2F2;
+}
+
+.popup {
+    text-align: center;
+}
+
+.modal .box_block .box {
+    display: block;
+}
+
+.modal__container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.modal__container .box {
+    width: 49%;
+}
+.box_text {
+    text-align: left;
+    color: #F2F2F2;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal__container {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal__title {
+        font-size: 2rem;
+    }
 }
