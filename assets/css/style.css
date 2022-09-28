@@ -44,8 +44,8 @@
     background: #2878EB;
 }
 
-.content-tab-1>.nav>li>a>h4:hover,
-.content-tab-1>.nav>li>a:hover {
+.content-tab-1>.nav>li:hover>a>h4,
+.content-tab-1>.nav>li:hover>a {
     color: #FFF;
 }
 
