@@ -1,3 +1,6 @@
+.collapsing {
+    overflow: scroll;
+}
 .box {
     display: inline-block;
     padding: 20px;
