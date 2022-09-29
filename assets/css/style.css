@@ -5,18 +5,19 @@
     margin-bottom: 20px;
     background-color: #c5d4e6;
     color: #666;
-    width: 33%;
+    width: 100%;
+
 }
 
 .box h3 {
     color: #444;
 }
 
-/* Start Products */
-
-.products .box {
-    width: 100%;
+.info .box {
+    width: 33%;
 }
+
+/* Start Products */
 
 .nav {
     display: block;
@@ -148,6 +149,7 @@
 }
 
 .content-tab-1 .card .contentBx h2 {
+    text-transform: capitalize;
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
@@ -242,11 +244,13 @@
     padding: 1rem;
     margin-right: 10px;
 }
+
 .modal .modal__card_head {
     background-color: #003d8d;
     padding: 15px;
     margin-bottom: 10px;
 }
+
 .modal .modal__card_head h3 {
     color: #F2F2F2;
 }
@@ -276,9 +280,112 @@
     width: 49%;
     padding-bottom: 0;
 }
+
 .box_text {
     text-align: left;
     color: #F2F2F2;
+}
+
+/* Start Refund */
+
+.notification {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.box .notification {
+    padding: 10px;
+    padding-left: 25px;
+}
+
+.box .notification.is-info {
+    color: #F2F2F2;
+    background-color: #003d8d;
+}
+
+.box .notification.is-danger {
+    display: none;
+    color: #F2F2F2;
+    background-color: #8d0000;
+}
+
+.box .login_btn_tele,
+.box .login_btn_tele:hover,
+.box .login_btn_tele:focus,
+.box .login_btn_tele:active {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    background-color: #0083e7;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 9px 21px 11px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.box .login_btn_tele span {
+    margin-right: 10px;
+}
+
+.box .noti_text {
+    text-align: center;
+}
+
+.box .noti_text h4 {
+    color: #ca0000;
+}
+
+.box .content {
+    color: #666;
+    font-size: small;
+}
+
+.box .content h3,
+.box .content h5 {
+    color: #666;
+}
+
+.media {
+    align-items: flex-start;
+    display: flex;
+    text-align: inherit;
+}
+
+.content .media-left {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.content .media-left:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.media-content {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: inherit;
+}
+
+.box .content .imgbox {
+    width: 64px;
+    height: 64px;
+}
+
+.box .content .imgbox img {
+    border-radius: 100%;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
