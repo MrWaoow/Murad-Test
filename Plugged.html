@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Plugged</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="assets/lib/fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/styleBS.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <div class="jumbotron-fluid position-relative header">
+            <div class="container text-center my-5 py-5">
+                <h1 class="text-white mt-4 mb-4">First come first serve!</h1>
+                <h1 class="text-white display-1 mb-5">Plugged</h1>
+                <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="Login_to_cont.html" class="nav-item nav-link active">Plugged</a>
+                    <a href="#" class="nav-item nav-link"><span class="icon"><i class="fas fa-list-ol"></i></span>Missed
+                        Drops</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span class="icon"><i
+                                    class="fas fa-history"></i></span>Refunds</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="Submit_A_Form.html" class="dropdown-item"><span class="icon"><i
+                                        class="fas fa-scroll"></i></span>Submit A Form</a>
+                            <a href="Refundable_Stores.html" class="dropdown-item"><span class="icon"><i
+                                        class="fas fa-store"></i></span>Refundable Stores</a>
+                            <a href="#" class="dropdown-item"><span class="icon"><i class="fas fa-list"></i></span>My
+                                Refunds</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Our Telegram <i
+                        class="fa-brands fa-telegram fa-xl"></i></a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!--Start Info -->
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <h3 class="user-count">10</h3>
+                        <p class="subtitle">Leechers Online</p>
+                    </div>
+                    <div class="box">
+                        <h3 class="acc-sup">462,966</h3>
+                        <p class="subtitle">Accounts Supplied</p>
+                    </div>
+                    <div class="box">
+                        <h3 class="acc-sup-24hrs">0</h3>
+                        <p class="subtitle">Accounts Supplied (Past 24 Hours)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Info End -->
+
+    <!--Start Plugged Form -->
+    <section class="Plugged">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 centeredDev">
+                    <div class="box">
+                        <div class="notification">
+                            Hi User, you have grabbed <strong>0</strong> accounts in the past 24 hours. To see
+                            your recent grabbed accounts, click <a href="">here</a>.
+                            <br><br>Your avg. msg rate is currently at <strong>0.00%</strong>.
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="notification danger">
+                            <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
+                            <span id="error-message"></span>
+                        </div>
+                        <form>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Account Key</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control has_icons_left">
+                                            <input class="input" type="text" name="key" id="key" onpaste="return false;"
+                                                ondrop="return false;" placeholder="Given from Telegram. E.g; J8px5Y"
+                                                autocorrect="off" required="">
+                                            <span class="icon icons_left">
+                                                <i class="fas fa-key"></i>
+                                            </span>
+                                        </p>
+                                        <p id="success-message" class="help success" style="display: none;"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Account</label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <p class="control is-expanded has_icons_right">
+                                            <textarea class="textarea" name="account_supply"
+                                                placeholder="It will be shown here when you hit submit."
+                                                disabled=""></textarea>
+                                            <span class="icon icons_right">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped centered">
+                                <div class="control">
+                                    <button class="button success btn_submit_refund">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+    </section>
+    <!--End Submit Form -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid position-relative overlay-top text-white-50">
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy
+                                Policy</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms &
+                                Condition</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular
+                                FAQs</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help &
+                                Support</a>
+                            <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright container-fluid text-white-50 border-top py-4"
+            style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0">Copyright &copy; <a class="text-white" href="#">Plugged</a>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <p class="m-0">Designed by <a class="text-white" href="#">Mr. Waoow</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/lib/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/PopUp.js"></script>
+</body>
+
+</html>
