@@ -1540,7 +1540,6 @@ pre code {
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
 }
 
 .table tbody + tbody {
@@ -9702,7 +9701,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .table .thead-dark th {
     color: inherit;
-    border-color: #dee2e6;
   }
 }
 

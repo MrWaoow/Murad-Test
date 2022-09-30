@@ -12,6 +12,15 @@ body {
     animation: gradient 15s ease infinite;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ccc;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -74,7 +83,7 @@ button {
 }
 
 .collapsing {
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .icon {
@@ -89,18 +98,23 @@ button {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: #272727a9;
+    background-color: #1a031a86;
     color: #ddd;
     width: 100%;
 
 }
 
-.box h3 {
-    color: #ccc;
+.notification {
+    background-color: #1a031ab6;
+    border-radius: 4px;
+    position: relative;
+    padding: 25px;
+    margin-bottom: 15px;
+    font-size: 14px;
 }
 
-.info .box {
-    width: 33%;
+.box h3 {
+    color: #ccc;
 }
 
 /* start Header */
@@ -129,6 +143,13 @@ button {
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: #9f00a5;
+}
+
+.navbar-light .navbar-toggler {
+    color: #ddd;
+    background-color: #ddd;
+    border-color: #ddd;
+    border-radius: 5px;
 }
 
 .dropdown-item.active,
@@ -394,7 +415,7 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
-    background-color: #1764c9;
+    background-color: #4a00aa;
     display: none;
 }
 
@@ -404,7 +425,7 @@ button {
 
 #close {
     cursor: pointer;
-    color: white;
+    color: #ddd;
     position: absolute;
     top: 0;
     font-size: 25px;
@@ -414,24 +435,24 @@ button {
 }
 
 .modal .modal__card_head {
-    background-color: #003d8d;
+    background-color: #1500319c;
     padding: 15px;
     margin-bottom: 10px;
 }
 
 .modal .modal__card_head h3 {
-    color: #F2F2F2;
+    color: #ccc;
 }
 
 .popup {
-    color: #F2F2F2;
+    color: #ddd;
     text-align: center;
 }
 
 .modal .box {
     padding: 5px 0 5px 0;
-    background-color: #003d8d;
-    color: #F2F2F2;
+    background-color: #1500319c;
+    color: #ddd;
 }
 
 .modal .box_block .box {
@@ -439,14 +460,15 @@ button {
 }
 
 .modal__container {
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    justify-content: space-between;
 }
 
 .modal__container .box {
-    width: 49%;
-    padding-bottom: 0;
+    width: 48%;
 }
 
 .box_text {
@@ -456,15 +478,8 @@ button {
 
 /* Start Refund */
 
-.notification {
-    border-radius: 4px;
-    position: relative;
-    padding: 20px;
-    margin-bottom: 15px;
-    font-size: 14px;
-}
-
-.box .notification {
+.box .notification.danger,
+.box .notification.info {
     padding: 10px;
     padding-left: 25px;
 }
@@ -826,6 +841,78 @@ form hr {
     max-height: 40em;
     min-height: 8em;
 }
+
+/* Start Missed Drops */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.box .table {
+    background-color: inherit;
+    color: #ccc;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+table td,
+table th {
+    vertical-align: top;
+}
+
+table th {
+    color: #ccc;
+}
+
+.has-text-centered {
+    text-align: center !important;
+}
+
+td:not([align]),
+th:not([align]) {
+    text-align: inherit;
+}
+
+.table td,
+.table th {
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+}
+
+.table td,
+.table th {
+    border: 1px solid #4618ac;
+}
+
+table td:not([align]),
+table th:not([align]) {
+    text-align: inherit;
+}
+
+.table thead td,
+.table thead th {
+    border-width: 0 0 2px;
+    color: #ccc;
+}
+
+.table th:not([align]) {
+    text-align: inherit;
+}
+
+.box.missed {
+    background-color: #4d00b1;
+}
+
+.box.missed h3 {
+    margin-bottom: 10px;
+}
+
 
 @media screen and (min-width: 769px),
 print {
