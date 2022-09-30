@@ -913,6 +913,12 @@ table th:not([align]) {
     margin-bottom: 10px;
 }
 
+/* Start Recent Grabbed */
+
+.notification.not_prim {
+    background-color: #00d1b2;
+    color: #fff;
+}
 
 @media screen and (min-width: 769px),
 print {
