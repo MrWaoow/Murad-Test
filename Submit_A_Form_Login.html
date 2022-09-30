@@ -58,9 +58,9 @@
                         <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"><span class="icon"><i
                                     class="fas fa-history"></i></span>Refunds</a>
                         <div class="dropdown-menu m-0">
-                            <a href="Submit_A_Form.html" class="dropdown-item active"><span class="icon"><i
+                            <a href="Submit_A_Form.html" class="dropdown-item"><span class="icon"><i
                                         class="fas fa-scroll"></i></span>Submit A Form</a>
-                            <a href="Refundable_Stores.html" class="dropdown-item"><span class="icon"><i
+                            <a href="Refundable_Stores.html" class="dropdown-item active"><span class="icon"><i
                                         class="fas fa-store"></i></span>Refundable Stores</a>
                             <a href="#" class="dropdown-item"><span class="icon"><i class="fas fa-list"></i></span>My
                                 Refunds</a>
@@ -72,7 +72,7 @@
             </div>
         </nav>
     </div>
-    <!-- Navbar End -->>
+    <!-- Navbar End -->
 
     <!--Start Info -->
     <section class="info">
@@ -97,7 +97,7 @@
     </section>
     <!-- Info End -->
 
-    <!--Start Refund -->
+    <!--Start Submit Form -->
     <section class="refund">
         <div class="container">
             <div class="row">
@@ -111,7 +111,7 @@
                             <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
                             <span id="error-message"></span>
                         </div>
-                        <div class="noti_text">
+                        <div class="noti_text hiden">
                             <span class="icon">
                                 <i class="fas fa-sign-in-alt fa-5x"></i>
                             </span>
@@ -120,8 +120,138 @@
                                 so that way
                                 we know who you are!</p>
                             <br>
-                            <button onclick="location.href='Submit_A_Form_Login.html'" class="login_btn_tele"><span class="icon"><i class="fa-brands fa-telegram fa-xl"></i></span>Log
+                            <button class="login_btn_tele"><span class="icon"><i
+                                        class="fa-brands fa-telegram fa-xl"></i></span>Log
                                 in with Telegram</button>
+                        </div>
+                        <div class="form_fill_out">
+                            <form autocomplete="off">
+                                <div class="field">
+                                    <label class="label">Country</label>
+                                    <input class="checkradio" id="country-usa" type="radio" name="country" value="usa"
+                                        checked="checked">
+                                    <label for="country-usa">USA</label>
+                                    <input class="checkradio" id="country-ca" type="radio" name="country" value="ca">
+                                    <label for="country-ca">Canada</label>
+                                    <input class="checkradio" id="country-uk" type="radio" name="country" value="uk">
+                                    <label for="country-uk">UK</label>
+                                    <p class="help warning">By selecting the country, the
+                                        store options change!</p>
+                                </div>
+                                <hr>
+                                <div class="field">
+                                    <label class="label">Telegram/Discord Username</label>
+                                    <div class="control has_icons_left">
+                                        <span class="icon">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <input class="input" name="username" type="text" value="" required="">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Store</label>
+                                    <div class="control has_icons_left">
+                                        <div class="select" style="width: 100%;">
+                                            <select name="store" style="width: 100%;">
+                                                <option value="---">Select A Store</option>
+                                                <option value="windsorstore">Windsorstore</option>
+                                                <option value="amazon">Amazon</option>
+                                                <option value="amazon3P">Amazon Third Party</option>
+                                                <option value="TargetGrocery">Target (Grocery)</option>
+                                                <option value="costco">Costco Testing New Method</option>
+                                                <option value="apple">Apple</option>
+                                                <option value="adidas">Adidas</option>
+                                                <option value="macys">Macy's</option>
+                                                <option value="bloomingdales">Bloomingdale's</option>
+                                                <option value="vs">Victoria's Secret</option>
+                                                <option value="bathbodyworks">Bath &amp; Body Works</option>
+                                                <option value="urbanoutfitters">Urban Outfitters</option>
+                                                <option value="hollister">Hollister</option>
+                                                <option value="abercrombie">Abercrombie &amp; Fitch</option>
+                                                <option value="lululemon">lululemon</option>
+                                                <option value="glasses">Glasses / Contacts</option>
+                                                <option value="H&amp;M">H&amp;M</option>
+                                                <option value="gymshark">Gymshark</option>
+                                                <option value="dicks">Dick's Sporting Goods</option>
+                                                <option value="SHEIN">SHEIN</option>
+                                                <option value="levi">Levi's</option>
+                                                <option value="RalphLauren">Ralph Lauren</option>
+                                                <option value="ugg">UGG®</option>
+                                                <option value="designer">Designer Stores</option>
+                                                <option value="crocs">Crocs</option>
+                                                <option value="microsoft">Microsoft</option>
+                                                <option value="rei">REI</option>
+                                                <option value="homedepot">Home Depot</option>
+                                                <option value="reebok">Reebok</option>
+                                                <option value="evo">evo</option>
+                                                <option value="esteelauder">Estee Lauder</option>
+                                                <option value="awaytravel">awaytravel</option>
+                                                <option value="1800flowers">1800flowers</option>
+                                                <option value="kohls">kohl's</option>
+                                                <option value="crunchyrollstore">Crunchyroll Store</option>
+                                                <option value="lego">LEGO</option>
+                                                <option value="hns">HSN</option>
+                                                <option value="qvc">QVC</option>
+                                            </select>
+                                        </div>
+                                        <span class="icon">
+                                            <i class="fas fa-shopping-bag"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Phone Number</label>
+                                    <div class="control has_icons_left">
+                                        <input class="input" name="phone" type="tel" required="">
+                                        <span class="icon">
+                                            <i class="fas fa-phone"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Order #</label>
+                                    <div class="control has_icons_left">
+                                        <input class="input" name="order_id" type="text" required="">
+                                        <span class="icon">
+                                            <i class="fas fa-list-ol"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help warning">If multiple, separate them by commas. e.g.
+                                        "orderid1,orderid2"</p>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Login Credentials</label>
+                                    <div class="control has_icons_left">
+                                        <input class="input" name="credentials" type="text" required="">
+                                        <span class="icon">
+                                            <i class="fas fa-info"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help warning">It must be in email:password format.<br>IF GUEST ORDER
+                                        PLS PUT SHIPPING/BILLING INFO FOR PASSWORD SO WE CAN FIND YOUR ORDER!</p>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Full total including taxes + shipping</label>
+                                    <div class="control has_icons_left">
+                                        <input class="input" name="order_total" type="number" required="">
+                                        <span class="icon">
+                                            <i id="currency-icon" class="fas fa-dollar-sign"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="help warning centered" style="margin-bottom: 10px;">By clicking
+                                    Submit, you agree to the Terms &amp; Conditions</p>
+                                <div class="field centered">
+                                    <div class="control">
+                                        <button class="button success btn_submit_refund">
+                                            <span class="icon">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span>Submit</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -195,7 +325,7 @@
             </div>
             <!--/.container-->
     </section>
-    <!--End Refund -->
+    <!--End Submit Form -->
 
     <!-- Footer Start -->
     <footer class="footer">
