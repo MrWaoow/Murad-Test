@@ -7,23 +7,8 @@
 		1.General css (Reset code)
 --------------------------------------*/
 body {
-    background: linear-gradient(135deg, #832383, #4d134d, #000000);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    background: linear-gradient(180deg, #461346, #832383, #000000);
+    background-size: 200% 120%;
 }
 
 h1,
