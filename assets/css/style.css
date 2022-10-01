@@ -7,18 +7,9 @@
 		1.General css (Reset code)
 --------------------------------------*/
 body {
-    background: linear-gradient(120deg, #800080, #5a005a, #460046, #000000);
-    background-size: 200% 200%;
+    background: linear-gradient(135deg, #832383, #4d134d, #000000);
+    background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #ccc;
 }
 
 @keyframes gradient {
@@ -33,6 +24,15 @@ h6 {
     100% {
         background-position: 0% 50%;
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ccc;
 }
 
 .hiden {
