@@ -7,7 +7,8 @@
 		1.General css (Reset code)
 --------------------------------------*/
 body {
-    background: linear-gradient(180deg, #471447, #6b1d6b, #1a071a);
+    background: linear-gradient(#521852, #791f79, #000000);
+    background-size: 200% 150%;
 }
 
 h1,
