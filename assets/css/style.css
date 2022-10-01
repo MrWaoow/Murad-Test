@@ -273,19 +273,16 @@ button {
     padding: 70px 0px 0px;
 }
 
-.content-tab-1 .card {
-    float: left;
+.content-tab-1 .product_card {
     position: relative;
     width: 320px;
     height: 450px;
     background: #3e048a;
     border-radius: 10px;
     overflow: hidden;
-    margin-right: 40px;
-    margin-bottom: 30px;
 }
 
-.content-tab-1 .card:before {
+.content-tab-1 .product_card:before {
     content: "";
     position: absolute;
     top: 0;
@@ -297,11 +294,11 @@ button {
     transition: 0.5s ease-in-out;
 }
 
-.content-tab-1 .card:hover:before {
+.content-tab-1 .product_card:hover:before {
     clip-path: circle(500px at 50% -62%);
 }
 
-.content-tab-1 .card:after {
+.content-tab-1 .product_card:after {
     position: absolute;
     top: 30%;
     left: -20%;
@@ -312,12 +309,12 @@ button {
 
 }
 
-.content-tab-1 .card .imgBx {
+.content-tab-1 .product_card .imgBx {
     width: 100%;
     transition: .5s;
 }
 
-.content-tab-1 .card .imgBx img {
+.content-tab-1 .product_card .imgBx img {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -327,7 +324,7 @@ button {
     border-radius: 1%;
 }
 
-.content-tab-1 .card .contentBx {
+.content-tab-1 .product_card .contentBx {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -337,7 +334,7 @@ button {
     height: 210px;
 }
 
-.content-tab-1 .card .contentBx h2 {
+.content-tab-1 .product_card .contentBx h2 {
     text-transform: capitalize;
     position: relative;
     font-weight: 600;
@@ -345,7 +342,7 @@ button {
     color: #fff;
 }
 
-.content-tab-1 .card .contentBx .price {
+.content-tab-1 .product_card .contentBx .price {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,7 +350,7 @@ button {
     transition: .5s;
 }
 
-.content-tab-1 .card .contentBx .price h3 {
+.content-tab-1 .product_card .contentBx .price h3 {
     color: white;
     font-weight: 300;
     font-size: 14px;
@@ -362,7 +359,7 @@ button {
     margin: 5px;
 }
 
-.content-tab-1 .card .contentBx .price span {
+.content-tab-1 .product_card .contentBx .price span {
     padding: 3px 5px;
     text-align: center;
     font-size: 14px;
@@ -374,7 +371,7 @@ button {
     border-radius: 4px;
 }
 
-.content-tab-1 .card .contentBx a {
+.content-tab-1 .product_card .contentBx a {
     display: inline-block;
     padding: 10px 20px;
     background: #fff;
