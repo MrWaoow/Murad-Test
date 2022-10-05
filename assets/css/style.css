@@ -1,6 +1,6 @@
 /*==================================
 * Author        : "Mr. Waoow"
-* Template Name : D-TOUCH
+* Template Name : Plugged
 ==================================== */
 
 /*-------------------------------------
@@ -8,7 +8,6 @@
 --------------------------------------*/
 body {
     background: linear-gradient(#521852, #791f79, #000000);
-    background-size: 200% 150%;
 }
 
 h1,
@@ -211,6 +210,16 @@ button {
     margin-bottom: 5px;
 }
 
+.content-tab-1>.nav>li:hover {
+    border: 2px solid #8e00aa;
+    background: #8e00aa;
+}
+
+.content-tab-1>.nav>li:has(a.active) {
+    border: 2px solid #510069;
+    background: #510069;
+}
+
 .content-tab-1>.nav li>a {
     display: inline-block;
     color: #ccc;
@@ -232,26 +241,6 @@ button {
     color: #ccc;
     font-size: 16px;
     margin-bottom: 0px;
-}
-
-.content-tab-1>.nav>li:hover {
-    border: 2px solid #8e00aa;
-    background: #8e00aa;
-}
-
-.content-tab-1>.nav>li:hover>a>h4,
-.content-tab-1>.nav>li:hover>a {
-    color: #ccc;
-}
-
-.content-tab-1>.nav>li.active>a>h4,
-.content-tab-1>.nav>li.active>a {
-    color: #ccc;
-}
-
-.content-tab-1>.nav>li.active {
-    border: 2px solid #510069;
-    background: #510069;
 }
 
 .tab-content-main {
