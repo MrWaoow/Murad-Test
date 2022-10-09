@@ -97,6 +97,27 @@ button {
     font-size: 14px;
 }
 
+.notification.success {
+    color: #48c774;
+}
+
+.notification.danger,
+.notification.info {
+    padding: 10px;
+    padding-left: 25px;
+}
+
+.notification.info {
+    color: #F2F2F2;
+    background-color: #4d00b1;
+}
+
+.notification.danger {
+    display: none;
+    color: #F2F2F2;
+    background-color: #8d0000;
+}
+
 .box h3 {
     color: #ccc;
 }
@@ -460,23 +481,6 @@ figure.imgbox {
 
 /* Start Refund */
 
-.box .notification.danger,
-.box .notification.info {
-    padding: 10px;
-    padding-left: 25px;
-}
-
-.box .notification.info {
-    color: #F2F2F2;
-    background-color: #4d00b1;
-}
-
-.box .notification.danger {
-    display: none;
-    color: #F2F2F2;
-    background-color: #8d0000;
-}
-
 .box .login_btn_tele {
     display: inline-block;
     vertical-align: top;
@@ -681,10 +685,6 @@ footer.footer {
     font-size: 1rem;
     position: relative;
     text-align: inherit;
-}
-
-.help.success {
-    color: #48c774;
 }
 
 .input,
