@@ -869,7 +869,7 @@ th:not([align]) {
 
 .table td,
 .table th {
-    border: 1px solid #4618ac;
+    border: none;
 }
 
 table td:not([align]),
@@ -879,11 +879,13 @@ table th:not([align]) {
 
 .table thead td,
 .table thead th {
+    border: 1px solid #4618ac;
     border-width: 0 0 2px;
     color: #ccc;
 }
 
-.table th:not([align]) {
+.table th:not([align]),
+.table td:not([align]) {
     text-align: inherit;
 }
 
