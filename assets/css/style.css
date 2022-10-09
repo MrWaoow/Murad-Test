@@ -77,6 +77,10 @@ button {
     width: 1.5rem;
 }
 
+table th {
+    font-weight: 900;
+}
+
 .box {
     display: inline-block;
     padding: 20px;
@@ -96,9 +100,16 @@ button {
     margin-bottom: 15px;
     font-size: 14px;
 }
+.box .noti_text  {
+    font-size: 13px;
+}
 
-.notification.success {
+.true {
     color: #48c774;
+}
+
+.wrong {
+    color: #ca0000;
 }
 
 .notification.danger,
@@ -112,8 +123,12 @@ button {
     background-color: #4d00b1;
 }
 
+.notification.success {
+    color: #F2F2F2;
+    background-color: #48c774;
+}
+
 .notification.danger {
-    display: none;
     color: #F2F2F2;
     background-color: #8d0000;
 }
@@ -509,10 +524,6 @@ figure.imgbox {
     text-align: center;
 }
 
-.box .noti_text h4 {
-    color: #ca0000;
-}
-
 .box .content {
     color: #ddd;
     font-size: small;
@@ -554,6 +565,32 @@ figure.imgbox {
 .box .content .imgbox img {
     border-radius: 100%;
     width: 100%;
+}
+
+.refunds .table td,
+.refunds .table th {
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    border-width: 1px;
+    padding: 10px 7px;
+}
+
+.refunds .table td span{
+    padding: 3px 10px;
+    margin: 5px 20px;
+    border-radius: 5px;
+    background-color: #FFDC5A;
+    color: #270727c2;
+}
+
+.refunds .table td .btn_view{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #4a00aa;
+    color: #ddd;
+    cursor: pointer;
+    text-decoration: none;
+    
 }
 
 /* Start Footer */
@@ -827,6 +864,7 @@ form hr {
 /* Start Missed Drops */
 
 table {
+    text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
 }
@@ -861,7 +899,6 @@ th:not([align]) {
 
 .table td,
 .table th {
-    border: 1px solid #dbdbdb;
     border-width: 0 0 1px;
     padding: 0.5em 0.75em;
     vertical-align: top;
