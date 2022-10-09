@@ -176,6 +176,27 @@ button {
     border: 0;
 }
 
+a.nav-link.dropdown-toggle {
+    font-family: 'Jost', sans-serif;
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F2F2F2;
+    outline: none;
+}
+
+figure.imgbox {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    border: none;
+}
+
+.imgbox ._24x24 {
+    height: 24px;
+    width: 24px;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #3e048a;
