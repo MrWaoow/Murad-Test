@@ -100,7 +100,8 @@ table th {
     margin-bottom: 15px;
     font-size: 14px;
 }
-.box .noti_text  {
+
+.box .noti_text {
     font-size: 13px;
 }
 
@@ -133,7 +134,7 @@ table th {
     background-color: #8d0000;
 }
 
-.box h3 {
+.box h3,.box h2 {
     color: #ccc;
 }
 
@@ -575,7 +576,7 @@ figure.imgbox {
     padding: 10px 7px;
 }
 
-.refunds .table td span{
+.refunds .table td span {
     padding: 3px 10px;
     margin: 5px 20px;
     border-radius: 5px;
@@ -583,14 +584,14 @@ figure.imgbox {
     color: #270727c2;
 }
 
-.refunds .table td .btn_view{
+.refunds .table td .btn_view {
     padding: 5px;
     border-radius: 3px;
     background-color: #4a00aa;
     color: #ddd;
     cursor: pointer;
     text-decoration: none;
-    
+
 }
 
 /* Start Footer */
@@ -941,6 +942,19 @@ table th:not([align]) {
     color: #fff;
 }
 
+/* Refund_Submitted */
+
+.steps.is-medium {
+    font-size: 1.25rem;
+}
+
+.steps .steps-segment {
+    position: relative;
+}
+
+.steps .steps-segment .steps-marker span.icon {
+    margin-right: 0;
+}
 @media screen and (min-width: 769px),
 print {
     .field.is-horizontal {
@@ -977,6 +991,20 @@ print {
     .field-body .field {
         margin-bottom: 0;
     }
+
+    .steps:not(.is-vertical).has-content-centered {
+        text-align: center;
+    }
+
+    .steps:not(.is-vertical) {
+        display: flex;
+    }
+    .steps:not(.is-vertical) .steps-segment:not(:last-child) {
+        flex-basis: 1rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    
 }
 
 @media only screen and (min-width: 768px) {
