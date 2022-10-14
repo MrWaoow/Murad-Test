@@ -7,7 +7,8 @@
 		1.General css (Reset code)
 --------------------------------------*/
 body {
-    background: linear-gradient(#521852, #791f79, #000000);
+    background: linear-gradient(90deg, #301d3d, #482C5B, #1f1227);
+    background-size: 150% 400%;
 }
 
 h1,
@@ -86,14 +87,14 @@ table th {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: #1a031a86;
+    background-color: #1a031a5b;
     color: #ddd;
     width: 100%;
 
 }
 
 .notification {
-    background-color: #1a031ab6;
+    background-color: #1a031a5b;
     border-radius: 4px;
     position: relative;
     padding: 25px;
@@ -148,7 +149,7 @@ table th {
 
 .navbar {
     background-color: #00000080;
-    box-shadow: 0 0 20px 1px #630063;
+    box-shadow: 0 0 20px 1px #2c1f35;
     margin-bottom: 90px;
 }
 
@@ -163,7 +164,7 @@ table th {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #9f00a5;
+    color: #6916a5;
 }
 
 .navbar-light .navbar-toggler {
@@ -177,7 +178,7 @@ table th {
 .dropdown-item:active {
     color: #F2F2F2;
     text-decoration: none;
-    background-color: #8d0092;
+    background-color: #6916a5;
 }
 
 .dropdown-menu {
@@ -269,8 +270,8 @@ figure.imgbox {
 }
 
 .content-tab-1>.nav>li:hover {
-    border: 2px solid #8e00aa;
-    background: #8e00aa;
+    border: 2px solid #6916a5;
+    background: #6916a5;
 }
 
 .content-tab-1>.nav>li:has(a.active) {
@@ -309,7 +310,7 @@ figure.imgbox {
     position: relative;
     width: 320px;
     height: 450px;
-    background: #3e048a;
+    background-color: #1a031a5b;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -444,7 +445,7 @@ figure.imgbox {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
-    background-color: #4a00aa;
+    background-color: #482C5B;
     display: none;
     overflow-y: auto;
 }
@@ -465,7 +466,7 @@ figure.imgbox {
 }
 
 .modal .modal__card_head {
-    background-color: #1500319c;
+    background-color: #1a031a5b;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -481,7 +482,6 @@ figure.imgbox {
 
 .modal .box {
     padding: 5px 0 5px 0;
-    background-color: #1500319c;
     color: #ddd;
 }
 
@@ -597,8 +597,12 @@ figure.imgbox {
 /* Start Footer */
 
 footer.footer {
-    background-color: transparent;
+    background-color: #0000003f;
     border-top: 1px solid rgb(256, 256, 256, 0.1) !important;
+}
+
+footer.footer .copyright{
+    background-color: #0000002f;
 }
 
 /* Start Submit Form */
