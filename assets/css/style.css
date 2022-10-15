@@ -961,124 +961,22 @@ table th:not([align]) {
 }
 
 /* Refund_Submitted */
-
-.steps .steps-segment {
-    position: relative;
+.steps-segment.is-warning:after {
+    background-color: #ffdd57;
 }
 
-.steps .steps-segment p {
-    font-size: 14px;
-}
-
-.steps .steps-segment .steps-marker span.icon {
-    margin-right: 0;
-}
-
-.steps .steps-marker {
-    align-items: center;
-    display: flex;
-    border-radius: 50%;
-    font-weight: 700;
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
-}
-
-.refund .steps .steps-marker {
-    height: 30px;
-    width: 30px;
-}
-
-.steps:not(.is-hollow) .steps-marker:not(.is-hollow) {
-    background-color: #00d1b2;
-    color: #fff;
-}
-
-.steps:not(.is-hollow) .steps-marker:not(.is-hollow).is-warning {
-    background-color: #ffdd57 !important;
-    color: rgba(0, 0, 0, .7) !important;
-}
-
-.steps-segment.is-active~.steps-segment:after,
-.steps-segment.is-active:after {
-    background-color: #dbdbdb;
-}
-
-.steps .steps-segment:not(:last-child):after {
-    content: " ";
-    display: block;
-    position: absolute;
-}
-
-.steps:not(.is-hollow) .steps-segment.is-active~.steps-segment .steps-marker:not(.is-hollow) {
-    background-color: #dbdbdb;
-    color: rgba(0, 0, 0, .7);
-}
-
-.has-ribbon {
-    position: relative;
-}
-
-.ribbon {
-    background-color: #fff;
-    border: 0.1rem solid #dbdbdb;
-    border-right: none;
-    color: #363636;
-    font-size: 1rem;
-    justify-content: center;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    text-align: center;
-    white-space: nowrap;
-    position: absolute;
-    top: 0.5em;
-    right: 0;
-    font-weight: 400;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.steps.is-vertical .steps-content {
-    margin-left: calc(1rem + 0.5em);
-    margin-top: -2rem;
-    padding-left: 1.5em;
-    padding-bottom: 1em;
-}
-
-.steps.is-vertical .steps-segment:not(:last-child):after {
-    bottom: -0.24rem;
-    left: calc(1rem - (0.2em));
-    top: 1.76rem;
-    width: 0.4em;
-}
-
-.steps .steps-segment:not(:last-child):after {
-    content: " ";
-    display: block;
-    position: absolute;
-}
-.steps-segment:after {
-    background-color: #8d0000;
+.steps-segment.is-danger:after {
+    background-color: #ff3860;
 }
 
 .tile.is-ancestor .tile.is-child.box .content div[style="display: flex; align-items: center;"] {
     margin-bottom: 20px;
 }
+
 .refund .box .textarea.is-small {
     height: 70px;
 }
 
-.refund .box .steps-marker.danger {
-    color: #F2F2F2;
-    background-color: #8d0000;
-    border: none;
-}
-
-.refund .box .steps-marker .icon {
-    display: inline-flex;
-}
 @media screen and (min-width: 769px),
 print {
     .field.is-horizontal {
@@ -1119,41 +1017,6 @@ print {
     .field-body>.field:not(:last-child) {
         margin-right: 0.75rem;
     }
-
-    .steps:not(.is-vertical) {
-        display: flex;
-    }
-
-    .steps:not(.is-vertical) .steps-segment:not(:last-child) {
-        flex-basis: 1rem;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-
-    .steps:not(.is-vertical).centered .steps-marker {
-        position: absolute;
-        left: calc(50% - 1.25rem);
-    }
-
-    .steps:not(.is-vertical).centered .steps-content {
-        margin-top: 2.5rem;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        padding-top: 0.2em;
-    }
-
-    .steps:not(.is-vertical) .steps-segment:not(:last-child):after {
-        height: 0.4em;
-        left: 2.26rem;
-        right: -0.24rem;
-        top: calc(1.25rem - (0.2em));
-    }
-
-    .steps:not(.is-vertical).centered .steps-segment:not(:last-child):after {
-        left: 50%;
-        right: -50%;
-    }
-
 }
 
 @media only screen and (min-width: 768px) {
