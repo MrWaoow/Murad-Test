@@ -25,9 +25,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bulma.min.css" rel="stylesheet">
-    <link href="assets/css/bulma.steps.min.css" rel="stylesheet">
-    <link href="assets/css/bulma-ribbon.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -47,22 +44,24 @@
     <!-- Header End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
+        <div class="container">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="Login_to_cont_plugged.html" class="nav-item nav-link">Plugged</a>
+            </div>
+            <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-0">
-                    <a href="Login_to_cont_plugged.html" class="nav-item nav-link">Plugged</a>
+                <div class="navbar-nav mr-auto py-0">
                     <a href="Login_to_cont_missed.html" class="nav-item nav-link"><span class="icon"><i
                                 class="fas fa-list-ol"></i></span>Missed
                         Drops</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span class="icon"><i
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown"><span class="icon"><i
                                     class="fas fa-history"></i></span>Refunds</a>
                         <div class="dropdown-menu m-0">
-                            <a href="Submit_A_Form.html" class="dropdown-item"><span class="icon"><i
+                            <a href="Submit_A_Form.html" class="dropdown-item active"><span class="icon"><i
                                         class="fas fa-scroll"></i></span>Submit A Form</a>
                             <a href="Refundable_Stores.html" class="dropdown-item"><span class="icon"><i
                                         class="fas fa-store"></i></span>Refundable Stores</a>
@@ -81,11 +80,11 @@
                                     class="fas fa-sign-out-alt"></i></span>Logout</a>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Our Telegram <i
+                <a href="#" class="btn btn-primary py-2 px-4 d-lg-block">Join Our Telegram <i
                         class="fa-brands fa-telegram fa-xl"></i></a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!-- Navbar End -->
 
     <!--Start Info -->
@@ -93,7 +92,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="steps is-medium is-centered has-content-centered box">
+                    <ul class="steps centered has-content-centered box">
                         <li class="steps-segment is-active">
                             <span class="steps-marker is-warning">
                                 <span class="icon">
@@ -101,8 +100,8 @@
                                 </span>
                             </span>
                             <div class="steps-content">
-                                <p class="is-size-4">Submitted</p>
-                                <p class="is-size-6">Refund request pending approval!</p>
+                                <h4>Submitted</h4>
+                                <p>Refund request pending approval!</p>
                             </div>
                         </li>
                         <li class="steps-segment ">
@@ -112,8 +111,8 @@
                                 </span>
                             </span>
                             <div class="steps-content">
-                                <p class="is-size-4">In Progress</p>
-                                <p class="is-size-6">Your refund is being worked on!</p>
+                                <h4>In Progress</h4>
+                                <p>Your refund is being worked on!</p>
                             </div>
                         </li>
                         <li class="steps-segment ">
@@ -123,8 +122,8 @@
                                 </span>
                             </span>
                             <div class="steps-content">
-                                <p class="is-size-4">Send Payment</p>
-                                <p class="is-size-6">Refund completed, now send payment!</p>
+                                <h4>Send Payment</h4>
+                                <p>Refund completed, now send payment!</p>
                             </div>
                         </li>
                         <li class="steps-segment ">
@@ -134,8 +133,8 @@
                                 </span>
                             </span>
                             <div class="steps-content">
-                                <p class="is-size-4">Refund Completed</p>
-                                <p class="is-size-6">Refund is fully completed, thanks!</p>
+                                <h4>Refund Completed</h4>
+                                <p>Refund is fully completed, thanks!</p>
                             </div>
                         </li>
                     </ul>
@@ -151,32 +150,10 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="box has-ribbon">
-                        <div style="cursor: pointer;" class="ribbon is-danger modal-button" data-target="#modal-cr-4458"
+                        <div style="cursor: pointer;" class="ribbon danger modal-button" data-target="#modal-cr-4458"
                             aria-haspopup="true">Cancel Refund</div>
-                        <div id="modal-cr-4458" class="modal">
-                            <div class="modal-background"></div>
-                            <div class="modal-card">
-                                <header class="modal-card-head">
-                                    <p class="modal-card-title">Are you sure?</p>
-                                    <button class="delete" aria-label="close"></button>
-                                </header>
-                                <section class="modal-card-body">
-                                    <p>Are you sure that you want to cancel ticket <b>#4458</b> (<b>Amazon</b>)? This
-                                        refund will no longer be available on the list when it gets cancelled.</p>
-                                </section>
-                                <footer class="modal-card-foot">
-                                    <form method="POST" action="https://plugged.pro/refund/4458/cancel">
-                                        <button class="button plugged">Yes, cancel it</button>
-                                        <input type="hidden" name="refund_id" value="4458">
-                                        <input type="hidden" name="_token"
-                                            value="46B7J76MkXOPsXNOxDJPlBGc4Pg6H6SxBU1B0vPu">
-                                    </form>
-                                    <button class="button is-danger" aria-label="close">No</button>
-                                </footer>
-                            </div>
-                        </div>
                         <div class="content">
-                            <h2 style="margin-bottom: 15px;">Updates</h2>
+                            <h3>Updates</h3>
                             <ul class="steps is-vertical">
                                 <li class="steps-segment ">
                                     <span class="steps-marker ">
@@ -194,32 +171,32 @@
                         </div>
                     </div>
                     <div class="box has-ribbon" style="display: none;">
-                        <div class="notification is-success">
+                        <div class="notification success">
                             <span class="icon"><i class="fas fa-check"></i></span>
                             You have successfully cancelled your refund!
                         </div>
                         <div class="content">
-                            <p class="title is-size-4" style="margin-bottom: 15px;">Updates</p>
+                            <h4>Updates</h4>
                             <ul class="steps is-vertical">
-                                <li class="steps-segment is-danger">
-                                    <span class="steps-marker is-danger">
+                                <li class="steps-segment">
+                                    <span class="steps-marker danger">
                                         <span class="icon">
                                             <i class="fas fa-times-circle"></i>
                                         </span>
                                     </span>
                                     <div class="steps-content">
-                                        <p class="is-size-4">Today at 7:56 PM</p>
+                                        <h4>Today at 7:56 PM</h4>
                                         <p>You have successfully cancelled this refund ticket.</p>
                                     </div>
                                 </li>
-                                <li class="steps-segment is-danger">
-                                    <span class="steps-marker is-danger">
+                                <li class="steps-segment">
+                                    <span class="steps-marker danger">
                                         <span class="icon">
                                             <i class="fas "></i>
                                         </span>
                                     </span>
                                     <div class="steps-content">
-                                        <p class="is-size-4">Today at 7:24 PM</p>
+                                        <h4>Today at 7:24 PM</h4>
                                         <p>You submitted a refund form! It is currently being reviewed and we'll provide
                                             you with an update when a refunder checks it out. ❤</p>
                                     </div>
@@ -231,15 +208,14 @@
                 <div class="col-md-5">
                     <div class="tile is-ancestor">
                         <div class="tile is-parent">
-                            <article class="tile is-child notification"
-                                style="background-color: #1d183d; color: #b4aebc;">
+                            <article class="tile is-child box" style="background-color: #1d183d; color: #b4aebc;">
                                 <div class="content">
-                                    <p class="title is-size-4" style="margin-bottom: 15px;">Your Refunder</p>
-                                    <div style="margin-bottom: -15px; display: flex; align-items: center;">
+                                    <h4>Your Refunder</h4>
+                                    <div style="display: flex; align-items: center;">
                                         <figure style="margin-left: inherit; margin-right: 15px; display: block;"
-                                            class="image is-64x64"><img class="is-rounded"
+                                            class="image imgbox"><img class="is-rounded"
                                                 src="https://tgstatic.teleme.io/assets/text_avatar/%3F.svg"></figure>
-                                        <div class="text" style="margin-top: -18px;">
+                                        <div class="text" has_icons_left>
                                             <h4>???</h4>
                                         </div>
                                     </div>
@@ -258,9 +234,9 @@
                             <div class="field-body">
                                 <div class="field">
                                     <label class="label">Phone Number</label>
-                                    <div class="control has-icons-left">
+                                    <div class="control has_icons_left">
                                         <input class="input is-small" type="text" value="" readonly="">
-                                        <span class="icon is-small is-left">
+                                        <span class="icon is-small icons_left">
                                             <i class="fas fa-phone"></i>
                                         </span>
                                     </div>
@@ -269,18 +245,18 @@
                             <div class="field-body">
                                 <div class="field">
                                     <label class="label">Full Total</label>
-                                    <div class="control has-icons-left">
+                                    <div class="control has_icons_left">
                                         <input class="input is-small" type="text" value="" readonly="">
-                                        <span class="icon is-small is-left">
+                                        <span class="icon is-small icons_left">
                                             <i class="fas fa-dollar-sign"></i>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="field">
                                     <label class="label">Fee To Pay (15%)</label>
-                                    <div class="control has-icons-left">
+                                    <div class="control has_icons_left">
                                         <input class="input is-small" type="text" value="" readonly="">
-                                        <span class="icon is-small is-left">
+                                        <span class="icon is-small icons_left">
                                             <i class="fas fa-comments-dollar"></i>
                                         </span>
                                     </div>
@@ -288,9 +264,9 @@
                             </div>
                             <div class="field">
                                 <label class="label">Credentials (Amazon)</label>
-                                <div class="control has-icons-left">
+                                <div class="control has_icons_left">
                                     <input class="input is-small" type="text" value="" readonly="">
-                                    <span class="icon is-small is-left">
+                                    <span class="icon is-small icons_left">
                                         <i class="fas fa-sign-in-alt"></i>
                                     </span>
                                 </div>

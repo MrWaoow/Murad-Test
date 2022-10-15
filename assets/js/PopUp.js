@@ -7,4 +7,4 @@ const viewMore = ()=>{modalMenu.classList.add("show")}
 
 //viewMoreBtn.addEventListener("click",()=>{modalMenu.classList.add("show")});
 closeBtn.addEventListener("click",()=>{modalMenu.classList.remove("show")});
-modalBtn.addEventListener("click",()=>{modalMenu.classList.remove("show")});
+$("body").click(function(){ $("#modal").fadeOut(); });
