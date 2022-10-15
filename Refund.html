@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Refund</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="assets/css/fontawesome.all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.timeline.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <div class="jumbotron-fluid position-relative header">
+            <div class="container text-center my-5 py-5">
+                <h1 class="text-white mt-4 mb-4">First come first serve! 🔌✨</h1>
+                <h1 class="text-white display-1 mb-5">Plugged ✨</h1>
+                <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
+        <div class="container">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="Login_to_cont_plugged.html" class="nav-item nav-link">Plugged</a>
+            </div>
+            <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="Login_to_cont_missed.html" class="nav-item nav-link"><span class="icon"><i
+                                class="fas fa-list-ol"></i></span>Missed
+                        Drops</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span class="icon"><i
+                                    class="fas fa-history"></i></span>Refunds</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="Submit_A_Form.html" class="dropdown-item"><span class="icon"><i
+                                        class="fas fa-scroll"></i></span>Submit A Form</a>
+                            <a href="Refundable_Stores.html" class="dropdown-item"><span class="icon"><i
+                                        class="fas fa-store"></i></span>Refundable Stores</a>
+                            <a href="Login_to_cont_refunds.html" class="dropdown-item"><span class="icon"><i
+                                        class="fas fa-list"></i></span>My
+                                Refunds</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <figure class="imgbox"><img class="_24x24" src="assets/img/header/avatar.png"></figure>Username
+                    </a>
+                    <div class="dropdown-menu md-0">
+                        <a href="#" class="dropdown-item"><span class="icon"><i
+                                    class="fas fa-sign-out-alt"></i></span>Logout</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary py-2 px-4 d-lg-block">Join Our Telegram <i
+                        class="fa-brands fa-telegram fa-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!--Start Info -->
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3 class="user-count">10</h3>
+                        <p class="subtitle">Leechers Online</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3 class="acc-sup">462,966</h3>
+                        <p class="subtitle">Accounts Supplied</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3 class="acc-sup-24hrs">0</h3>
+                        <p class="subtitle">Accounts Supplied (Past 24 Hours)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Info End -->
+
+    <!--Start Missed Drops -->
+    <section class="refund">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="box">
+                        <div class="notification is-info" style="padding: 0.50rem 1.5rem 0.50rem 1.5rem;">
+                            <span class="icon"><i class="fas fa-info-circle"></i></span>
+                            How does refunding work? Read the steps below to find out!
+                        </div>
+
+                        <div class="notification danger notif-error"
+                            style="display: none; padding: 0.50rem 1.5rem 0.50rem 1.5rem;">
+                            <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
+                            <span id="error-message"></span>
+                        </div>
+
+                        <div class="timeline is-centered" style="background-color: #2a0b53; color: #b4aebc;">
+                            <header class="timeline-header">
+                                <span class="tag is-medium is-primary">Start</span>
+                            </header>
+                            <div class="timeline-item is-primary">
+                                <div class="timeline-marker is-primary is-icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">Step 1</p>
+                                    <p>Pick a store you want to refund from by clicking <a
+                                            href="https://plugged.pro/refund/stores">here</a>. <b>Make sure to read the
+                                            info and requirements for each store so your refund does not fail!</b></p>
+                                </div>
+                            </div>
+                            <div class="timeline-item is-primary">
+                                <div class="timeline-marker is-primary is-icon">
+                                    <i class="fa fa-shopping-basket"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">Step 2</p>
+                                    <p>Add whatever is doable to your cart and check out like you're a regular online
+                                        shopper! If you want to make sure that the items you picked out can be
+                                        refundable then you can DM <a href="https://t.me/manilla">@manilla</a> on
+                                        Telegram so he can give you the "OK".</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item is-primary">
+                                <div class="timeline-marker is-primary is-icon">
+                                    <i class="fa fa-shipping-fast"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">Step 3</p>
+                                    <p>Wait for your order to arrive at your doorstep. 🥰 Do not submit a form yet!</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item is-primary">
+                                <div class="timeline-marker is-primary is-icon">
+                                    <i class="fab fa-wpforms"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">Step 4</p>
+                                    <p>Once you have received your order, you can now submit it by clicking <a
+                                            href="https://plugged.pro/refund/form">here</a> so a refunder can start
+                                        working on it.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item is-info">
+                                <div class="timeline-marker is-info is-icon">
+                                    <i class="far fa-smile-wink"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">Step 5</p>
+                                    <p>Once a refunder starts working on your refund, they will be working their magic
+                                        to get your refund done and you will receive updates on it on Telegram. <b>Just
+                                            sit back and wait!</b></p>
+                                </div>
+                            </div>
+                            <div class="timeline-item is-success">
+                                <div class="timeline-marker is-success is-icon">
+                                    <i class="fa fa-dollar-sign"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">Step 6</p>
+                                    <p>When your refund is done, you will have to pay the refunder a 15% cut!</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item is-success">
+                                <div class="timeline-marker is-success is-icon">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">Step 7</p>
+                                    <p>Your refund is fully completed - you get your money back and you get to keep your
+                                        refunded items for way less!</p>
+                                </div>
+                            </div>
+                            <header class="timeline-header">
+                                <span class="tag is-info">Info</span>
+                            </header>
+                            <div class="timeline-item is-info">
+                                <div class="timeline-marker is-info is-icon">
+                                    <i class="fa fa-info"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">What is the point in refunding?</p>
+                                    <p>The whole point in refunding is that you get to keep your items and get your
+                                        money back without having to return them! A convenient way in saving money.</p>
+                                </div>
+                            </div>
+                            <header class="timeline-header">
+                                <span class="tag is-medium is-info">End</span>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box missed">
+                        <div class="content">
+                            <h3></h3>
+                            <div class="content">
+                                We have helped our customers save <strong>$1,567,343.58</strong> on their online orders
+                                from <strong>2,472</strong> refunds!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+    </section>
+    <!--End Missed Drops -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid position-relative text-white-50">
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy
+                                Policy</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms &
+                                Condition</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular
+                                FAQs</a>
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help &
+                                Support</a>
+                            <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright container-fluid text-white-50 border-top py-4"
+            style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0">Copyright &copy; <a class="text-white" href="#">Plugged</a>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <p class="m-0">Designed by <a class="text-white" href="#">Mr. Waoow</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/fontawesome.all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/PopUp.js"></script>
+</body>
+
+</html>
