@@ -299,14 +299,14 @@ figure.imgbox {
 
 .content-tab-1>.nav li>a>i {
     color: #ccc;
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .content-tab-1>.nav>li>a>h4 {
     display: block;
     color: #ccc;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0px;
 }
 
@@ -369,15 +369,16 @@ figure.imgbox {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
     text-align: center;
     transition: 1s;
     height: 210px;
+    overflow-y: auto;
 }
 
 .content-tab-1 .product_card .contentBx h2 {
     text-transform: capitalize;
     position: relative;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
@@ -394,16 +395,16 @@ figure.imgbox {
 .content-tab-1 .product_card .contentBx .price h3 {
     color: white;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 5px;
 }
 
 .content-tab-1 .product_card .contentBx .price span {
-    padding: 3px 5px;
+    padding: 2px 4px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     display: inline-block;
     background: #fff;
     margin: 0 5px;
@@ -414,7 +415,7 @@ figure.imgbox {
 
 .content-tab-1 .product_card .contentBx a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 15px;
     background: #fff;
     border-radius: 4px;
     margin-top: 10px;
