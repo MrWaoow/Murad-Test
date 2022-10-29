@@ -382,13 +382,14 @@ figure.imgbox {
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
+    margin-bottom: 5px;
 }
 
 .content-tab-1 .product_card .contentBx .price {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 20px;
+    margin-bottom: 8px;
     transition: .5s;
 }
 
@@ -398,7 +399,7 @@ figure.imgbox {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 5px;
+    margin-bottom: 2px;
 }
 
 .content-tab-1 .product_card .contentBx .price span {
@@ -418,7 +419,6 @@ figure.imgbox {
     padding: 5px 15px;
     background: #fff;
     border-radius: 4px;
-    margin-top: 10px;
     text-decoration: none;
     font-weight: 600;
     color: #111;
