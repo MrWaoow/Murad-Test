@@ -1,2 +1,2 @@
-# Plugged-In
-Plugged-In
+# Plugged
+Plugged
